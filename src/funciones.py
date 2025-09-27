@@ -11,6 +11,6 @@ def mostrar_tabla (resultados):
     print("-" *50)
     for equipo, stats in tabla:
         print(f"{equipo:<10}{stats['puntos']:<8}{stats['innovacion']:<8}{stats['presentacion']:<8}{stats['errores']:<10}{stats['mer']:<5}")
-        
+
 def equipos_con_errores (ronda):
     return list(map(lambda x: x[0], filter(lambda x: x[1]['errores'], ronda.items())))
